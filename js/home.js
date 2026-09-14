@@ -25,6 +25,17 @@ async function loadData() {
 function renderCards() {
   const vehicles = state.realtime.vehicles;
   const routes = state.routes.routes;
+
+  // 数据为空处理：给出明确提示，避免页面出现无内容的空白区
+  if (!Array.isArray(vehicles) || vehicles.length === 0) {
+    $('#route-cards').html(
+      '<div class="col-12"><div class="alert alert-info text-center mb-0">'
+      + '当前时段暂无运营车辆数据，请稍后刷新或查看首末班时间。'
+      + '</div></div>'
+    );
+    return;
+  }
+
   let html = '';
 
   vehicles.forEach(v => {
