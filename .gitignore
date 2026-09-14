@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Screenshots (optional, can be removed if needed)
+# screenshots/
