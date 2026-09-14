@@ -1,0 +1,20 @@
+{
+  "title": "校园公交客流量统计",
+  "source": "模拟一周运营数据（教学演示，非真实统计）",
+  "weeklyByRoute": [
+    { "route": "楠苑环线", "monday": 320, "tuesday": 280, "wednesday": 350, "thursday": 290, "friday": 380, "saturday": 150, "sunday": 120 },
+    { "route": "梓苑—楠苑通勤线", "monday": 250, "tuesday": 230, "wednesday": 270, "thursday": 240, "friday": 310, "saturday": 100, "sunday": 80 },
+    { "route": "北门—南门直达线", "monday": 400, "tuesday": 380, "wednesday": 420, "thursday": 390, "friday": 450, "saturday": 200, "sunday": 180 }
+  ],
+  "hourlyFlow": {
+    "labels": ["06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00"],
+    "楠苑环线": [20,80,150,110,60,40,120,70,50,55,90,130,160,100,70,50,30],
+    "梓苑—楠苑通勤线": [15,60,130,90,45,30,100,55,40,42,75,110,140,80,50,35,20],
+    "北门—南门直达线": [30,100,180,130,80,60,150,90,70,75,120,170,200,140,90,60,40]
+  },
+  "crowdSummary": [
+    { "route": "楠苑环线", "avgPassengers": 28, "capacity": 45, "avgRate": "62%", "peakHour": "08:00", "peakPassengers": 42 },
+    { "route": "梓苑—楠苑通勤线", "avgPassengers": 25, "capacity": 35, "avgRate": "71%", "peakHour": "08:00", "peakPassengers": 33 },
+    { "route": "北门—南门直达线", "avgPassengers": 22, "capacity": 50, "avgRate": "44%", "peakHour": "08:00", "peakPassengers": 45 }
+  ]
+}

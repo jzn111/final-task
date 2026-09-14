@@ -1,0 +1,64 @@
+{
+  "title": "校园公交路线信息",
+  "source": "云南大学呈贡校区校园公交（教学演示数据，非真实运营）",
+  "routes": [
+    {
+      "id": "R1",
+      "name": "楠苑环线",
+      "color": "#0d6efd",
+      "direction": "顺时针环行",
+      "firstBus": "07:00",
+      "lastBus": "22:00",
+      "interval": 10,
+      "fare": { "base": 1.0, "maxStops": 3, "longRide": 2.0 },
+      "capacity": 45,
+      "stops": [
+        { "name": "楠苑宿舍", "x": -4, "z": -3, "arrive": "07:00" },
+        { "name": "楠苑食堂", "x": -2, "z": -4, "arrive": "07:03" },
+        { "name": "图书馆", "x": 0, "z": -3, "arrive": "07:06" },
+        { "name": "教学楼A栋", "x": 2, "z": -2, "arrive": "07:09" },
+        { "name": "体育馆", "x": 3, "z": 0, "arrive": "07:12" },
+        { "name": "梓苑宿舍", "x": 2, "z": 3, "arrive": "07:15" },
+        { "name": "北门", "x": 0, "z": 4, "arrive": "07:18" },
+        { "name": "行政楼", "x": -2, "z": 3, "arrive": "07:21" }
+      ]
+    },
+    {
+      "id": "R2",
+      "name": "梓苑—楠苑通勤线",
+      "color": "#198754",
+      "direction": "双向对开",
+      "firstBus": "07:30",
+      "lastBus": "21:30",
+      "interval": 15,
+      "fare": { "base": 1.0, "maxStops": 4, "longRide": 2.0 },
+      "capacity": 35,
+      "stops": [
+        { "name": "梓苑宿舍", "x": 2, "z": 3, "arrive": "07:30" },
+        { "name": "体育馆", "x": 3, "z": 0, "arrive": "07:34" },
+        { "name": "教学楼A栋", "x": 2, "z": -2, "arrive": "07:38" },
+        { "name": "图书馆", "x": 0, "z": -3, "arrive": "07:42" },
+        { "name": "楠苑食堂", "x": -2, "z": -4, "arrive": "07:46" },
+        { "name": "楠苑宿舍", "x": -4, "z": -3, "arrive": "07:50" }
+      ]
+    },
+    {
+      "id": "R3",
+      "name": "北门—南门直达线",
+      "color": "#dc3545",
+      "direction": "南北直达",
+      "firstBus": "06:30",
+      "lastBus": "22:30",
+      "interval": 8,
+      "fare": { "base": 1.0, "maxStops": 2, "longRide": 1.5 },
+      "capacity": 50,
+      "stops": [
+        { "name": "北门", "x": 0, "z": 4, "arrive": "06:30" },
+        { "name": "行政楼", "x": -2, "z": 3, "arrive": "06:34" },
+        { "name": "图书馆", "x": 0, "z": -3, "arrive": "06:40" },
+        { "name": "教学楼B栋", "x": 4, "z": -4, "arrive": "06:45" },
+        { "name": "南门", "x": 0, "z": -6, "arrive": "06:50" }
+      ]
+    }
+  ]
+}
