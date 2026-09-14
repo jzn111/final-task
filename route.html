@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>路线详情 - 校园公交</title>
+  <link href="libs/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🚌 校园公交信息中心</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="route.html">路线详情</a></li>
+          <li class="nav-item"><a class="nav-link" href="stats.html">数据统计</a></li>
+          <li class="nav-item"><a class="nav-link" href="three.html">三维展示</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <p id="status" class="alert alert-warning">
+      <span id="status-text"></span>
+      <button id="retry-btn" class="btn btn-sm btn-primary ms-2" style="display:none;">重试</button>
+    </p>
+
+    <header class="mb-4">
+      <h1 class="h3" id="route-title">路线详情</h1>
+      <p class="text-muted" id="route-info"></p>
+    </header>
+
+    <div class="row g-3">
+      <div class="col-12 col-lg-7">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">站点列表与到站时间</h5>
+            <ul class="list-group list-group-flush" id="stop-list"></ul>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">票价明细</h5>
+            <table class="table table-sm">
+              <thead><tr><th>乘坐区间</th><th>票价</th></tr></thead>
+              <tbody id="fare-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">实时车辆信息</h5>
+            <div id="vehicle-info"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">运营时间</h5>
+            <ul class="list-unstyled mb-0" id="schedule-info"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container text-center text-muted small py-4">
+    <p>云南大学信息学院 · 软件开发综合实践期末大作业 · 2026.9</p>
+  </footer>
+
+  <script src="libs/jquery-3.7.1.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/route.js"></script>
+</body>
+</html>
